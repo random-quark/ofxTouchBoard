@@ -190,6 +190,12 @@ const vector<ofxTB::Electrode>& ofxTouchBoard::getData(){
     return electrodes;
 }
 
+//------ Added getter function for available bits in ofSerial buffer, used to check state of serial connection
+const int ofxTouchBoard::available(){
+    return serial.available();
+}
+//--------------------------------------------------------------------------------
+
 const vector<ofxTB::Electrode>& ofxTouchBoard::getRawData(){
     return serial.getData();
 }

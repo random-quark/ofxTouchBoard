@@ -46,6 +46,12 @@ class ofxTouchBoard {
 	
 		ofEvent<int> touched;
 		ofEvent<int> released;
+    
+        //------ Added getter function for available bits in ofSerial buffer, used to check state of serial connection
+        const int available();
+        //--------------------------------------------------------------------------------------------------------------
+    
+    
 	
 	private:
 		void init();
